@@ -4,6 +4,14 @@
   functions = "netlify/functions"
   publish = "out"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[plugins]
+  [[plugins]]
+    package = "@netlify/plugin-nextjs"
+
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
   #[[redirects]]
